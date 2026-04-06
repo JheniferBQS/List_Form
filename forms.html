@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        /* Página (Body) */
+        body {
+            background: linear-gradient(135deg, #4b056c, #aa06ac);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgb(249, 183, 255);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Campos */
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border: 1px solid #8778f6;
+        }
+
+        /* Botões */
+        button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background: #4CAF50;
+        }
+
+        button[type="reset"] {
+            background: #f44336;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Inscrição para Curso de Programação</h1>
+        <p class="descricao-da-pagina">
+            Este formulário tem como objetivo colher dados para seguir com a incrição em nosso curso de programação.<br>
+            Preencha corretamento todos os campos solicitados.
+        </p>
+
+        <div class="row">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="col-12">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="nome" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="data">Data:</label><br>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="cidade">Cidade:</label><br>
+
+                    <select name="cidade" id="cidade" required>
+                        <option value="">Selecione uma cidade</option>
+                        <option value="sorocaba">Sorocaba</option>
+                        <option value="campinas">Campinas</option>
+                        <option value="curitiba">Curitiba</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label>Sexo:</label><br>
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="sexo" id="masc">
+                    <label for="masc">Masculino</label>
+                </div>
+
+                <div class="col-12">
+                    <label>Interesse:</label><br>
+                    <input type="checkbox" name="interesse" id="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="interesse" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="interesse" id="php">
+                    <label for="php">PHP</label>
+                </div>
+
+                <div class="col-12">
+                    <label>Nos envie uma foto do seu RG:</label><br>
+                    <input type="file" name="arquivo" id="arquivo">
+                    <label for="arquivo"></label>
+                </div>
+
+                <div class="col-12">
+                    <label for="texto">Nos conte um pouco sobre você:</label><br>
+                    <textarea name="texto" id="texto" rows="4" cols="30" placeholder="Digite Aqui"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+
+
+        </div>
+        </form>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
